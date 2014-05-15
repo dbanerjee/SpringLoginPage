@@ -12,10 +12,10 @@
 
     <mvc:annotation-driven />
 
-    <context:component-scan base-package="springmvc.web" />
+    <context:component-scan base-package="springmvc.web.controller" />
 
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix" value="/WEB-INF/jsp/" />
+        <property name="prefix" value="/pages/" />
         <property name="suffix" value=".jsp" />
     </bean>
 
