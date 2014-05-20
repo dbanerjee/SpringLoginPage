@@ -30,7 +30,15 @@
 		<groupId>org.springframework</groupId>
 		<artifactId>spring-webmvc</artifactId>
 		<version>${spring.version}</version>
-	</dependency>                    
+	</dependency>
+	
+	<!-- Hibernate Dependencies -->
+	<dependency>
+	    <groupId>org.hibernate</groupId>
+	    <artifactId>hibernate-core</artifactId>
+	    <version>4.3.5.Final</version>
+	</dependency>
+
   </dependencies> 
 
   <build>
