@@ -14,9 +14,24 @@
 
     <context:component-scan base-package="springmvc.web.controller" />
 
-    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/pages/" />
         <property name="suffix" value=".jsp" />
+    </bean>
+    
+    <bean id="urlMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+    	<property name="interceptors">
+    		<list>
+    			<ref local="localeChangeInterceptor"/>
+    		</list>
+    	</property>
+    	<property name="urlMap">
+    		<map>
+    			<entry key="/login.html">
+    				<ref bean="loginController"/>
+    			</entry>
+    		</map>
+    	</property>
     </bean>
 
 </beans>

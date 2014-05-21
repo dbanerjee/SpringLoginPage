@@ -4,9 +4,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Spring MVC Example</title>
+<title>Accomplished</title>
 </head>
 <body>
-	Welcome to Spring MVC (@@@)
+	<h1><%=request.getAttribute("message") %></h1>
+
 </body>
 </html>
