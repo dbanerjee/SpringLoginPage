@@ -5,6 +5,6 @@
 	</head>
 	<body>
 		<h2>Hello World!</h2>
-		<a href="/pages/userLogin.html">Welcome! Click Here to Login</a>
+		<a href="userLogin">Welcome! Click Here to Login</a>
 	</body>
 </html>
